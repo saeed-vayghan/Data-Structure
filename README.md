@@ -3,7 +3,7 @@ Collection of pure js data-structure
 
 ## Built in structures
 1. Array
-1. Map (Hashtable is a data structure that maps keys to values, The perfect hash function assigns each key to a unique index.)
+1. Map (Hashtable is a data structure that maps keys to values, Perfect hash function assigns each key to a unique index.)
 1. Set
 1. Weak Map
 1. Weak Set
