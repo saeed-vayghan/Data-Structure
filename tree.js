@@ -1,7 +1,11 @@
-
 /*
 
   Binary Tree
+
+    A
+  B   C
+
+  B < A , C > A
 
 */
 
@@ -68,6 +72,30 @@ function Tree(data, left = null, right = null) {
     if ( this.right !== null ) {
       this.right.inOrder();
     }
+  }
+
+  this.preOrder = function () {
+    console.log(this.data);
+
+    if ( this.left !== null ) {
+      this.left.inOrder();
+    }
+
+    if ( this.right !== null ) {
+      this.right.inOrder();
+    }
+  }
+
+  this.postOrder = function () {
+    if ( this.left !== null ) {
+      this.left.inOrder();
+    }
+
+    if ( this.right !== null ) {
+      this.right.inOrder();
+    }
+
+    console.log(this.data);
   }
 
   this.printt = function(method) {
