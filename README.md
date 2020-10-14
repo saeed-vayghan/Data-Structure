@@ -19,4 +19,5 @@ Collection of pure js data-structure
 1. [linked-list.js](linked-list.js): Linked List, Support Next and Prev Node
 1. [queue-with-two-stacks.js](queue-with-two-stack.js): Queue with two stacks
 1. [binary-tree.js](binary-tree.js): Binary Tree
+1. [trie-tree.js](trie-tree.js): Trie Tree
 1. [merkle-tree-simple.js](merkle-tree-simple.js): A simple and trivial implementation of sorted merkel tree
