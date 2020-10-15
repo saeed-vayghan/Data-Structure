@@ -1,12 +1,8 @@
 /*
-
   Binary Tree
-
     A
   B   C
-
   B < A , C > A
-
 */
 
 
@@ -40,7 +36,7 @@ function Tree(data, left = null, right = null) {
     }
   }
 
-  this.contains = function(val) {
+  this.find = function(val) {
     if ( this.data === val ) {
       return true;
     }
@@ -50,7 +46,7 @@ function Tree(data, left = null, right = null) {
         return false;
       }
 
-      return this.left.contains(val);
+      return this.left.find(val);
     }
 
     if ( val > this.data ) {
@@ -58,8 +54,28 @@ function Tree(data, left = null, right = null) {
         return false;
       }
 
-      return this.right.contains(val);
+      return this.right.find(val);
     }
+  }
+
+  this.findMin = function() {
+    let min = this;
+
+    while (min.left !== null) {
+      min = min.left;
+    }
+
+    return min.data;
+  }
+
+  this.findMax = function() {
+    let max = this;
+
+    while (max.right !== null) {
+      max = max.right;
+    }
+
+    return max.data;
   }
 
   this.inOrder = function () {
@@ -115,11 +131,13 @@ tree.insert(12);
 tree.insert(11);
 tree.insert(5);
 tree.insert(14);
+tree.insert(20);
 tree.insert(15);
 
-console.log(tree)
+console.log('Max:', tree.findMax())
+console.log('Min:', tree.findMin())
 
-console.log(tree.contains(100))
-console.log(tree.contains(14))
+console.log('find 100', tree.find(100))
+console.log('find 14', tree.find(14))
 
 tree.printt('inOrder');
