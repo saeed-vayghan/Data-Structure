@@ -6,7 +6,7 @@ function isBalanced(s) {
 
   for (let char of s) {
 
-    if ( opening.includehttps://github.com/saeed-vayghan/Data-Structures(char) ) {
+    if ( opening.includes(char) ) {
       stack.push(opening.indexOf(char));
 
       } else {
