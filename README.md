@@ -23,3 +23,7 @@ Collection of pure js data-structure
 1. [binary-tree.js](binary-tree.js): Binary Tree
 1. [trie-tree.js](trie-tree.js): Trie Tree
 1. [merkle-tree-simple.js](merkle-tree-simple.js): A simple and trivial implementation of sorted merkel tree
+
+
+## To Do
+1. LRU Cache - Least Recently Used data (using Doubly-Linked-List and Hash-Table)
